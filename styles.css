@@ -1,0 +1,754 @@
+html{
+  scroll-behavior: smooth;
+}
+.ml15 {
+  font-weight: 1200;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+.ml9 {
+  position: relative;
+  font-weight: 800;
+  font-size: 5em;
+}
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 1px;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+body{
+	margin: 0;
+}
+h1{
+	color: blue;
+	font-family: 'Tangerine';
+	font-size: 100px;
+	margin: 50px auto 0 auto;
+  text-align: center;
+}
+#h1{
+  color: blue;
+	font-family: 'Tangerine';
+	font-size: 100px;
+	margin: 50px auto 0 auto;
+  text-align: center;
+}
+#p1{
+	color: blue;
+	font-family: 'Baloo Chettan 2';
+	font-size: 35px;
+  padding-top: 1px;
+	font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+.p2{
+  line-height: 2;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 0 15% 0 15%;
+}
+h2{
+   color: blue;
+   font-family: 'Tangerine';
+   font-size: 50px;
+}
+h3{
+  font-family: 'Baloo Chettan 2';	
+  color: #3282b8;
+  padding: 0;
+}
+.h3_1{
+  color: #000;
+}
+.head{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 0;
+}
+.head3{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 0;
+}
+p{
+	line-height: 2;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	padding: 0 auto 0 auto;
+}
+.p3{
+  line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+  padding: 0 5% 0 5%;
+  color: #fff;
+}
+.projectslink{
+  color: #0f4c75;
+  font-family: 'Montserrat', sans-serif;
+}
+.projectslink:hover{
+  color: #000;
+}
+hr{
+	margin: 100px auto 100px auto;
+	border-style: dotted none none;
+	border-width: 5px;
+	width: 5%;
+	border-color: #3282b8;
+
+}
+.f-link{
+  color: orange;
+  text-decoration: none;
+}
+
+header{
+  background-color: #4876f7;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(140, 138, 255));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 15% 1%;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+	padding: 0px 10px;
+}
+ul li a{
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Baloo Chettan 2';
+	color: #fff;
+}
+ul li a.active{
+	color: black;
+}
+ul li a:hover{
+	color: #1b262c;
+}
+.top-container {
+  width: 100%;
+  height: 650px;
+  background-color: #e1ebe8;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  background-image: linear-gradient(rgba(151, 126, 241, 0.5), rgba(97, 107, 240, 0.5)), url('./img/mount3.jpg');
+}
+.top-container:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 1000;
+  background: linear-gradient(transparent, #fff);
+}
+
+.bubbles{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
+  background: transparent;
+}
+.bubble{
+  position: absolute;
+  bottom: 0;
+  background: radial-gradient( #fff,#666666);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: flying 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+.bubble:nth-child(2){
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(3){
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(4){
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+.bubble:nth-child(5){
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(6){
+  width: 45px;
+  height: 45px;
+  left: 40%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(7){
+  width: 25px;
+  height: 25px;
+  left: 75%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(8){
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(9){
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+.bubble:nth-child(10){
+  width: 40px;
+  height: 40px;
+  left: 25%;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+@keyframes flying{
+  0%{
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(100px);
+  }
+  100%{
+    bottom: 1480px;
+    transform: translateX(-200px);
+  }
+}
+
+.middle-container{
+	background-color: white;
+	text-align: center;
+}
+
+.profile{
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+.skills {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+.skill_img{
+  width: 90px;
+  margin: 20px 0 20px 20px;
+}
+
+.content{
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 30px;
+}
+.project_img{
+  width: 80%;
+  height: auto;
+  padding: 30px 0 0 0;
+}
+.mainbtn{
+  color: #fff;
+  background: #4299ed;
+  border-radius: 30px;
+  padding: 16px 86px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  line-height: 86px;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: 0.8s all;
+  margin-bottom: 40px;
+}
+.mainbtn:hover{
+  color:#fff;
+  background: #1680e6;
+} 
+.btn2{
+	background: rgb(148, 56, 56);
+}
+.btn2:hover{
+	background: #00272e;
+}
+.btn3{
+	color: #8c6c07;
+    background: #fae298;
+}
+.btn3:hover{
+	background: #f8d467;
+	color: #8c6c07;
+}
+.btn4{
+  background: #2b3d51;
+}
+.btn4:hover{
+  background: #192430;
+}   
+.btn5{
+  background: #374760;
+}
+.btn5:hover{
+  background: #242f40;
+}
+.btn6{
+  background: #374760;
+}
+.btn6:hover{
+  background: #242f40;
+}
+.project1{
+  width: 100%;
+  height: auto;
+  background: #31355b;
+}
+.project2{
+  width: 100%;
+  height: auto;
+  background: rgb(226, 84, 226);
+}
+.project3{
+	width: 100%;
+    height: auto;
+	background: #21364b;
+}
+.project4{
+  width: 100%;
+  height: auto;
+  background: #7dcc93;
+}
+.project5{
+  width: 100%;
+  height: auto;
+  background: #f76160;
+}
+.project6{
+  width: 100%;
+  height: auto;
+  background: #aad11c;
+}
+.contact-me{
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 20%;
+}
+
+.midlogo{
+	width: 170px;
+	height: 170px;
+	padding-top: 80px;
+}
+#f{
+	position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+	background-color: #1b262c;
+	width: 100%;
+	height: 220px;
+	
+}
+.flogo{
+	width: 85px;
+	height: 85px;
+	position: absolute;
+	left: 15%;
+	top: 33%;
+}
+.link{
+	display: flex;
+	position: absolute;
+	top: 5%;
+	left: 36%;
+}
+.footer-link{
+  color: #11999E;
+  font-family: 'Baloo Chettan 2', cursive;
+  margin: 15px 12px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-link:hover {
+  color: #EAF6F6;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.footer-social-icons ul li{
+    margin: 0 15px;
+    list-style: none;
+}
+.footer-social-icons ul li a{
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: -5s;
+}
+.footer-social-icons ul li a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #11999E;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+.footer-social-icons ul li a:hover:before{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #11999E;
+}
+.footer-social-icons ul li a:hover{
+    color: #11999E;
+    box-shadow: 0 0 5px #11999E;
+    text-shadow: 0 0 5px #11999E;
+}
+#myBtn{
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  color: #fff;
+  background-color: #00abff;
+  padding: 12px;
+  border-radius: 10px;
+}
+#myBtn:hover{
+  background: #606060;
+}
+.copyright {
+  position: absolute;
+  bottom: 1%;
+  left: 41%;
+  text-align: center;	
+  color: #EAF6F6;
+  font-size: 0.85rem;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 25;
+  -moz-border-radius: 225;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.showcase{
+  height: auto;
+  background: #fff;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.card-conatiner{
+  width: 60%;
+}
+
+.card{
+  margin: 3% 2%;
+  border: 1px solid #3282b8;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.card-img-top{
+  width: 100%;
+  height: 9rem;
+}
+
+.butn{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Baloo Chettan 2', cursive;
+  color: #0f4c75;
+  padding: 0 3%;
+}
+
+.butn:hover{
+  color: #000;
+}
+
+@media screen and (max-width: 1080px){
+  header{
+    padding: 3% 5%;
+  }
+  .ml15 {
+    font-weight: 1000;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+  .ml9 {
+    position: relative;
+    font-weight: 800;
+    font-size: 1em;
+  }
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 0.1em;
+  }
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+  ul li a{
+    font-size: 3rem;
+  }
+  h1{
+    font-size: 100px;
+    margin: 100px auto 0 auto;
+    color: white;
+  }
+  #h1{
+    font-size: 100px;
+    margin: 200px auto 0 auto;
+    color: white;
+  }
+  #p1{
+    font-size: 3rem;
+    color: white;
+  }
+  .top-container {
+    height: 800px;
+  }
+  .profile{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .midlogo{
+    width: 310px;
+    height: 310px;
+  }
+  h2{
+    font-size: 140px;
+  }
+  .p2{
+    line-height: 1.2;
+    font-size: 60px;
+    padding: 0;
+  }
+  hr{
+    width: 15%;
+    border-width: 10px;
+  }
+  .skills{
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+  }
+  .timelineContent{
+    width: 90%;
+  }
+  h3{
+    font-size: 60px;
+  }
+  p{
+    line-height: 1.2;
+    font-size: 60px;
+  }
+  .head{
+    font-size: 80px;
+    line-height: 1.2;
+  }
+  .head3{
+    font-size: 54px;
+    line-height: 1;
+  }
+  .p3{
+    font-size: 45px;
+  }
+  .front{
+    width: 45%;
+  }
+  .py{
+    width: 45%;
+  }
+  .btn{
+    font-size: 40px;
+    border-radius: 35px;
+  }
+  .content{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 30px;
+  }
+  .skill_img{
+    width: 160px;
+  }
+  .project_img{
+    width: 100%;
+    height: auto;
+    padding: 10% 0 5% 0;
+  }
+  .mainbtn{
+    line-height: 200px;
+    padding: 20px 150px;
+    border-radius: 0%;
+    font-size: 30px;
+  }
+  .contact-me{
+    margin-bottom: 100%;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #f{
+    height: 800px;
+  }
+  .flogo{
+    top: 10%;
+    left: 40%;
+    width: 220px;
+    height: 220px;
+  }
+  .link{
+    top: 50%;
+    left: 8%;
+  }
+  .footer-link{
+    font-size: 50px;
+  }
+  .switch{
+    font-size: 50px;
+    padding: 28px 35px;
+    right: 207%;
+  }
+  .footer-social-icons ul{
+    top: 65%;
+    left: 50%;
+  }
+  .footer-social-icons ul li a{
+    width: 130px;
+    height: 130px;
+    font-size: 80px;
+    line-height: 145px;
+  }
+  .copyright{
+    font-size: 2rem;
+    left: 16%;
+  }
+  .card-container{
+    width: 100%;
+    height: auto;
+    margin: 1% 0;
+  }
+  .card{
+    display: block;
+    width: 100%;
+    margin: 3% 35%;
+  }
+}
